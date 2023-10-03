@@ -87,7 +87,7 @@ public:
                 cin>>newpass;
                 
                 cout<<"  \n";
-                cout<<"Confirm new password";
+                cout<<"Confirm new password\n";
                 cin>>confirmpass;
                 if (newpass==confirmpass){
                     cout<<"NEW PASSWORD SET SUCCESSFULLY!";
