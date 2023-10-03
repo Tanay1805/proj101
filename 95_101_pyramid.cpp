@@ -1,3 +1,9 @@
+/*"Write a C++ program to display the following pattern:
+
+1
+10
+101
+1010"*/
 #include <iostream>
 using namespace std;
 
