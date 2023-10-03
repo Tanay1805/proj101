@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-
+using namespace std;
 // Initialize a vector to store computed factorials
-std::vector<long long> factorialMemoization;
+ vector<long long> factorialMemoization;
 
 // Function to compute the factorial of a number using memoization
 long long factorial(int n) {
@@ -31,14 +31,14 @@ long long factorial(int n) {
 
 int main() {
     int n;
-    std::cout << "Enter a non-negative integer: ";
-    std::cin >> n;
+    cout << "Enter a non-negative integer: ";
+    cin >> n;
 
     if (n < 0) {
-        std::cout << "Factorial is undefined for negative numbers." << std::endl;
+        cout << "Factorial is undefined for negative numbers." << endl;
     } else {
         long long result = factorial(n);
-        std::cout << "Factorial of " << n << " is " << result << std::endl;
+        cout << "Factorial of " << n << " is " << result <<endl;
     }
 
     return 0;
