@@ -3,9 +3,9 @@
 #include <iostream>
 using namespace std;
 
-int getHCF(int a, int b)
+int getHCF(int a, int b) // function with parameters given
 {
-  return b == 0 ? a : getHCF(b, a % b);
+  return b == 0 ? a : getHCF(b, a % b);  // turnary operator
 }
 
 int main()
@@ -19,7 +19,7 @@ int main()
     cout<<"Enter number 2: ";
     cin>>num2; 
 
-    HCF = getHCF(num1, num2);
+    HCF = getHCF(num1, num2); // function call
 
     cout<<"HCF of "<<num1<<" and "<<num2<<" is "<<HCF;
 
