@@ -10,11 +10,11 @@ int main(){
      cin >> n;
 
      cout<<"Enter number upto which you want the multiplication table: ";
-     cin>>a;
+     cin>>a; //to print numbers upto the given number 
 
-     for (int i=1; i<=a; i++){
+     for (int i=1; i<=a; i++){  // to  run i till the inputted value
 
-        cout<< n <<" x " << i << "=" << n*i<<"\n";
+        cout<< n <<" x " << i << "=" << n*i<<"\n"; // to print the multiplication table
 
         
      }
