@@ -33,7 +33,7 @@ void majorityElement(int arr[], int n)
         cout << "No Majority Element Found" << endl;
 }
   
-// Main method
+// Main function
 int main()
 {
 	int i,j,num;
