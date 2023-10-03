@@ -13,19 +13,19 @@ public:
 		else if (n < 0)
 			return 0;
 
-		else
+		else        // to find the combinations for climbing steps
 			return findStep(n - 3) + findStep(n - 2)
 				+ findStep(n - 1);
 	}
 };
 
-int main()
+int main() // main function
 {
 	Stairs g;
 	int n;
     cout<<"Enter number of steps to climb: ";
     cin>>n;
-	cout << g.findStep(n);
+	cout << g.findStep(n);  // function call
 	return 0;
 }
 
