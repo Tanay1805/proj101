@@ -39,10 +39,10 @@ int main()
         cout << " Enter the element " << i+1 << ": ";  
         cin >> arr[i];  
     }
-	//= { 12, 10, 9, 45, 2, 10, 10, 45 };
+	
 	int n = sizeof(arr) / sizeof(arr[0]);
 
-	rearrangeEvenAndOdd(arr, n);
+	rearrangeEvenAndOdd(arr, n);// function called and arguement given
 
 
 	for (int i = 0; i < n; i++)
