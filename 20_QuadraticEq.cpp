@@ -39,15 +39,15 @@ int main() {
             cout << "x2 = " << y << endl;
         }
     
-        else if (D == 0) {
+        else if (D == 0) { // if the value of d is less than 0
             cout << "Roots are REAL and SAME." << endl;
-            x = -b/(2*a);
+            x = -b/(2*a);  // formula for discriminant
             cout << "x = y =" << x << endl;
         }
 
         else {
 
-            Realroots = -b/(2*a);
+            Realroots = -b/(2*a);  // direct formula for generating discriminant
             Imaginaryroots =sqrt(-D)/(2*a);
             cout << "Roots are COMPLEX and DIFFERENT."  << endl;
             cout << "x = " << Realroots << "+" << Imaginaryroots << "i" << endl;
