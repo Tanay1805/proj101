@@ -85,6 +85,7 @@ public:
                 cout<<"  \n";
                 cout<<"Enter new password\n";
                 cin>>newpass;
+                
                 cout<<"  \n";
                 cout<<"Confirm new password";
                 cin>>confirmpass;
@@ -119,15 +120,16 @@ public:
 
     void DepositinAcc(){
         double amount;
-        cout<< "Enter the amount you want to deposit in your account: ";
+        cout<< "Enter the amount you want to deposit in your account: \n";
         cin>>amount;
 
         if (amount<0){
-            cout<<"The amount is invaild!: ";
+            cout<<"The amount is invaild!: \n";
             return;
         }
             balanceinAcc += amount;
-            cout<<"\nThe amount "<< amount << "Has been succesfully deposited!";
+            cout<<"\nThe amount "<< amount << " Has been succesfully deposited!\n";
+            cout<<"\n The total amount now in your account is "<< balanceinAcc<<" \n";
         };
     void Withdraw(){
         double amount;
@@ -136,12 +138,12 @@ public:
 
 
         if (amount> balanceinAcc || amount<0){
-            cout<<"The amount you enter is exceeding the balance (Insufficient amount) ";
+            cout<<"The amount you enter is exceeding the balance (Insufficient amount) \n";
                 return;
         }
         balanceinAcc -= amount;
-        cout<<amount<<" Succesfully withdrawn from your account";
-
+        cout<<amount<<" Succesfully withdrawn from your account\n";
+        cout<<"\n The total amount now in your account is "<< balanceinAcc<< "  \n";
         };
     };
 
