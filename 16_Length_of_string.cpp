@@ -8,7 +8,7 @@ int main()
 {
    int i=0;
    int count=0;
-   string characters; 
+   string characters; //because string is mentioned in the question as a parameter
 
    cout<<"\nEnter any string :: ";
    getline (cin,characters) ; // using getline function to include all types of input
