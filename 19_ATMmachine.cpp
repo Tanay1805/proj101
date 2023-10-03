@@ -85,7 +85,7 @@ public:
                 cout<<"  \n";
                 cout<<"Enter new password\n";
                 cin>>newpass;
-                
+
                 cout<<"  \n";
                 cout<<"Confirm new password\n";
                 cin>>confirmpass;
@@ -96,6 +96,8 @@ public:
                     cout<<"Re-eneter confirmation password";
                     cin>>confirmpass;
                     cout<<"NEW PASSWORD SET SUCCESSFULLY!";
+                    cout<<"  \n";
+                    cout<<"  \n";
                 }
             }
             else{
@@ -161,7 +163,7 @@ int main(){
         cout<<"   \n";
         cout<<"---------WELCOMES YOU----------\n";
         cout<<"   \n";
-        cout<<"Chose your option\n";
+        cout<<"Choose your option\n";
         cout<<"1. Generate Green Pin\n";
         cout<<"2. Change CARD password\n";
         cout<<"3. Account Details\n";
@@ -181,36 +183,41 @@ int main(){
         case 3:
              
             do{
-        cout<<"1. Check Balance\n";
-        cout<<"2. Deposit Amount\n";
-        cout<<"3. Withdraw Amout\n";
-        cout<<"4.Exit\n";
+                cout<<"1. Check Balance\n";
+                cout<<"2. Deposit Amount\n";
+                cout<<"3. Withdraw Amout\n";
+                cout<<"4.Exit\n";
 
-        cout<<"Enter your choice: ";
-        cin>> options;
+                cout<<"Enter your choice: ";
+                cin>> options;
 
-        switch (options)
-        {
-        case 1:
-            atm.BalanceInquiry();
-            break;
-        case 2:
-            atm.DepositinAcc();
-            break;
-        case 3:
-            atm.Withdraw();
-            break;
+                switch (options)
+                {
+                case 1:
+                    atm.BalanceInquiry();
+                    break;
+                case 2:
+                    atm.DepositinAcc();
+                    break;
+                case 3:
+                    atm.Withdraw();
+                    break;
+                case 4:
+                    cout<<"Thank You! Visit Again!";
+                    break;
+                
+                default:
+                    cout<<"Invalid! Please choose between the about numbers!";
+                    break;
+                }
+            }while (options!=4);
+
         case 4:
-            cout<<"Thank You! Visit Again!";
-            break;
-        
-        default:
-            cout<<"Invalid! Please choose between the about numbers!";
-            break;
+                cout<<"Thank You! Visit Again!";
+                break;
         }
-    } 
-    while (options!=4);
-    
+    }while(options!=4 );
+
     return 0;
 
 }
