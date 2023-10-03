@@ -1,7 +1,13 @@
+/*"Write a program to print the following pattern:
+
+*
+**
+***
+****"*/
 #include <iostream>
  using namespace std;
 
- int main(){
+ int main(){ // main function
     int n, i, j;
     
     cout<< "Enter the number of lines for the pyramid:";
@@ -10,8 +16,8 @@
     for(i=0; i<n; i++){
         
         for (j=0; j<=i; j++){
-            cout<<"*";
-        }
+            cout<<"*";  // for printing stars
+        } 
         cout<<"\n";
     }
    return 0;
