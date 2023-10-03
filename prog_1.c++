@@ -14,7 +14,7 @@ int main()
         sum+=i;
                                        //it will split and get on adding
 
-    cout << sum;
+    cout << sum;                      //it is for printing sum
 
     return 0;
 }
