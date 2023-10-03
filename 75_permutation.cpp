@@ -6,16 +6,16 @@
 #include <algorithm>
  
 using namespace std;
-void permute (string temp_str, int start, int end)
+void permute (string temp_str, int start, int end) // function to generate permutations of a string
 {
   int i;
-  if (start == end){
+  if (start == end){  //defining the start and end of the given string
     cout << temp_str << " ";
   }
   else{
-    for (int i = start; i < temp_str.length (); ++i){
+    for (int i = start; i < temp_str.length (); ++i){  // using length function to separetly index the array for further processing
       swap (temp_str[start], temp_str[i]);
-      permute (temp_str, start + 1, end);
+      permute (temp_str, start + 1, end); // functiion calls
       swap (temp_str[start], temp_str[i]);
     }
   }
@@ -23,7 +23,7 @@ void permute (string temp_str, int start, int end)
 int main()
 {
   string input_str;
-  bool flag = false;
+  bool flag = false;  // flagging the flow of the program
   cout << "Enter String : ";
   cin >> input_str;
   for (int i = 0; i < input_str.length () - 1; ++i)
@@ -33,7 +33,7 @@ int main()
     flag = true;
     break;
     }
-    else {
+    else {       // control statement to dictate the flow of execution
       flag = false;
       break;
     }
@@ -45,7 +45,7 @@ int main()
   else 
   {
     cout << "The permutations of " << input_str << " are : " << endl;
-    permute (input_str, 0, input_str.length () - 1); //  function call
+    permute (input_str, 0, input_str.length () - 1); //  function call to display
   }
   cout << endl;
   return 0;
