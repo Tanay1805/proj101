@@ -1,15 +1,23 @@
 // sum of natural number using recurtion
 
-#include <iostream>
+#include<iostream>
 using namespace std;
-int sum(int n) {
-   if(n == 0)
-   return n;
-   else
-   return n + sum(n-1);
+
+int add(int n);
+
+int main() { // main function
+    int n;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    cout << "Sum =  " << add(n); // printing the sum
+
+    return 0;
 }
-int main() {
-   int n = 10;
-   cout<<"Sum of first "<<n<<" natural numbers is "<<sum(n);
-   return 0;
+
+int add(int n) { // giving arguement
+    if(n != 0)
+        return n + add(n - 1);
+    return 0;
 }
