@@ -210,22 +210,7 @@ int main(){
         }
     } 
     while (options!=4);
-    return 0;
-            break;
-        case 4:
-            cout<<"Thank You! Visit Again!";
-            break;
-        
-        default:
-            cout<<"Invalid! Please choose between the about numbers!";
-            break;
-        }
-    } 
-    while (options!=4);
-
-
     
-
     return 0;
 
 }
