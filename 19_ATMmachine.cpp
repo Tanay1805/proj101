@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 using namespace std;
 
 
@@ -54,6 +55,7 @@ public:
         int OTP1;
         int newpass;
         int confirmpass;
+        int random;
         //int DebitCard;
         //int Creditcard;
             cout<<"Enter your card number:\n ";
@@ -62,18 +64,28 @@ public:
             cout<<"Enter you CIF number: \n";
             cin>>cifno1;
 
-            max1 = 1000000; 
+            //max1 = 1000000; 
             srand(time(0));
-            cout << "\nThe OTP number is: \n"<<rand()%max1;
+            
+            //cout<<random=rand();
+            int i,rdno;
+            //for(i=1;i<5;++i){
+            rdno=(rand()%1000000)+15;
+                
+            cout << "\nThe OTP number is: \n"<< rdno;
+            
            
 
             cout<<"\nReenter the OTP here to verify: \n";
             cin>>OTP1;
 
-     if(OTP==max1){
+            if(OTP1==rdno){
+
                 cout<<"OTP verified!\n";
+                cout<<"  \n";
                 cout<<"Enter new password\n";
                 cin>>newpass;
+                cout<<"  \n";
                 cout<<"Confirm new password";
                 cin>>confirmpass;
                 if (newpass==confirmpass){
@@ -85,6 +97,11 @@ public:
                     cout<<"NEW PASSWORD SET SUCCESSFULLY!";
                 }
             }
+            else{
+                cout<<"Invalid OTP";
+                return;
+            }
+            
 
         };
     
