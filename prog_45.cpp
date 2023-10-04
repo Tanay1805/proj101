@@ -11,7 +11,7 @@ int main() {
     // Display the elements of the array
     cout << "Elements of the array:" << endl;
     for (int i = 0; i < arraySize; i++) {
-        cout << "Element " << i << ": " << myArray[i] << endl;
+        cout << "Element " << i << ": " << myArray[i] << endl;//this line is for printing myArray by for condition till what we want to continue
     }
 
     return 0;
