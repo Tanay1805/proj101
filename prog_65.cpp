@@ -29,12 +29,12 @@ void row_sum(int arr[m][n])
 
 		
 	
-		// Reset the sum
+		// Reset the sum so get ready for sum of next row
 		sum = 0;
 	}
 }
 
-// Driver code
+
 int main()
 {
 
