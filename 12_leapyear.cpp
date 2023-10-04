@@ -9,7 +9,7 @@ int main() {
 
   // leap year if perfectly divisible by 400 also if the year is the year is divisble by 100
   // because if year is divisible by 100 it is not a leap year
-  if (year % 400 == 0 && year % 100 == 0) {
+  if (year % 400 == 0 && year % 100! = 0) {
     cout << year << " is a leap year.";
   }
 
