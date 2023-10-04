@@ -3,7 +3,7 @@
 //This is a C++ Program to Permute All Letters Of An Input String.
 #include <iostream>
 #include <string>
-#include <algorithm>
+//#include <algorithm>
  
 using namespace std;
 void permute (string temp_str, int start, int end) // function to generate permutations of a string
