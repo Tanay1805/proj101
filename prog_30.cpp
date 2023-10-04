@@ -1,17 +1,24 @@
-#include<iostream>
-
+#include <iostream>
 using namespace std;
-int main()
-{
-   int num, prod=1;
-   cout<<"Enter a Number: ";
-   cin>>num;
-   while(num>0)
-   {
-      prod = prod*num%10;;
-      num=num/10;
-   }
-   cout<<"\nProduct of all digits of given number is: "<<prod;
-   cout<<endl;
-   return 0;
+
+int main() {
+    int num, product = 1;
+
+    cout << "Enter an integer: ";
+    cin >> num;
+
+    // Handle negative numbers by converting to positive
+    if (num < 0) {
+        num = -num;
+    }
+
+    while (num != 0) {
+        int digit = num % 10;  // Extract the last digit
+        product *= digit;     // Multiply the digit with the product
+        num /= 10;            // Remove the last digit
+    }
+
+    cout << "The product of the digits is: " << product << endl;
+
+    return 0;
 }
