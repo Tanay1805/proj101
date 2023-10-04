@@ -12,7 +12,7 @@ int main() {
     n2 = n1;
     n1 = temp;
   }
-    
+   //as we took value of i <=n2 so we need n1 n2 always smaller in those both no.  
   for (int i = 1; i <=  n2; i++) {
     if (n1 % i == 0 && n2 % i ==0) {
       hcf = i;
