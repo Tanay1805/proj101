@@ -8,11 +8,11 @@ int kthSmallest(int arr[], int N, int K)
 	// Sort the given array
 	sort(arr, arr + N);
 
-	// Return k'th element in the sorted array
+	// Return k'th element in the sorted array to arrange elements in ascending order.
 	return arr[K - 1];
 }
 
-// Driver's code
+
 int main()
 {
 	int arr[] = { 12, 3, 5, 7, 19 };
