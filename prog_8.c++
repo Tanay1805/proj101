@@ -9,6 +9,11 @@ int main() {
     cout << "Enter coefficients a, b and c: ";                         //asking user to enter value for a b and c
     cin >> a >> b >> c;                                                //taking user input for a b and c
     discriminant = b*b - 4*a*c;                                        //discriminant is determinant which follows the formula according to maths ie. b^2-4ac
+     //we have three conditions 
+    //root are real and different
+    //roots are real and same
+    //roots are coplex and different
+    
     
     if (discriminant > 0) {
         x1 = (-b + sqrt(discriminant)) / (2*a);                       //this is the formula for finding roots of quadratic eqn
