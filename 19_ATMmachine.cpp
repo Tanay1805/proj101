@@ -58,8 +58,7 @@ public:
         int newpass;
         int confirmpass;
         int random;
-        //int DebitCard;
-        //int Creditcard;
+    
             cout<<"Enter your card number:\n ";
             cin>> cardno1;
 
